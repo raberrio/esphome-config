@@ -149,6 +149,7 @@ switch:
   - platform: gpio
     id: relay1
     pin: $relay1_gpio
+    restore_mode: ALWAYS_OFF
     on_turn_on:
       then:
         # Start the countdown timer.
@@ -177,6 +178,7 @@ switch:
   - platform: gpio
     id: relay2
     pin: $relay2_gpio
+    restore_mode: ALWAYS_OFF
     on_turn_on:
       then:
         # Start the countdown timer.
